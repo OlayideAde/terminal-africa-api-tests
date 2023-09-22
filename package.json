@@ -1,0 +1,19 @@
+{
+  "name": "terminal-africa-tests",
+  "version": "1.0.0",
+  "description": "Tests for terminal africa's apis",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "test": "mocha tests/**/*.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "chai": "^4.3.8",
+    "mocha": "^10.2.0",
+    "mochawesome": "^7.1.3",
+    "mochawesome-report-generator": "^6.2.0",
+    "supertest": "^6.3.3"
+  }
+}
