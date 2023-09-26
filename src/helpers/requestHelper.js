@@ -21,9 +21,20 @@ export class RequestHelper {
     return baseUrl.get(endpoint).set(auth_header).send();
   }
 
+  sendPost(url, endpoint, auth_header, payload) {
+    baseUrl = supertest(url);
+    return baseUrl
+        .post(endpoint)
+        .set(auth_header)
+        .send(payload);
+  }
+
   logTest(response) {
     //log request details
-    console.log("\nRequest : ", response.request.method +" "+ response.request.url);
+    console.log(
+      "\nRequest : ",
+      response.request.method + " " + response.request.url
+    );
     console.log("\nPayload : ", response.request._data);
     //log response
     console.log("\nResponse : ", JSON.stringify(response.body, null, 2));
