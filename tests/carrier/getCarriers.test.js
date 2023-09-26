@@ -1,5 +1,5 @@
 import { expect } from "chai";
-import GetCarriers from "../src/testBuilders/getCarriers.js";
+import GetCarriers from "../../src/testBuilders/carrier/getCarriers.js";
 
 let getCarriers;
 let response;

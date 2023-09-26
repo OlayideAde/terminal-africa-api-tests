@@ -1,5 +1,5 @@
 import { expect } from "chai";
-import { RequestHelper } from "../helpers/requestHelper.js";
+import { RequestHelper } from "../../helpers/requestHelper.js";
 
 let baseUrl;
 let response;
