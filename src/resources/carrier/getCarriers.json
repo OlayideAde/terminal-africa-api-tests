@@ -1,0 +1,305 @@
+{
+   "type": "object",
+    "properties": {
+      "status": {
+        "type": "boolean"
+      },
+      "message": {
+        "type": "string"
+      },
+      "data": {
+        "type": "object",
+        "properties": {
+          "carriers": {
+            "type": "array",
+            "items": [
+              {
+                "type": "object",
+                "properties": {
+                  "active": {
+                    "type": "boolean"
+                  },
+                  "available_countries": {
+                    "type": "array",
+                    "items": [
+                      {
+                        "type": "string"
+                      },
+                      {
+                        "type": "string"
+                      },
+                      {
+                        "type": "string"
+                      },
+                      {
+                        "type": "string"
+                      },
+                      {
+                        "type": "string"
+                      },
+                      {
+                        "type": "string"
+                      },
+                      {
+                        "type": "string"
+                      }
+                    ]
+                  },
+                  "contact": {
+                    "type": "object",
+                    "properties": {
+                      "email": {
+                        "type": "string"
+                      },
+                      "phone": {
+                        "type": "string"
+                      }
+                    },
+                    "required": [
+                      "email",
+                      "phone"
+                    ]
+                  },
+                  "domestic": {
+                    "type": "boolean"
+                  },
+                  "international": {
+                    "type": "boolean"
+                  },
+                  "logo": {
+                    "type": "string"
+                  },
+                  "name": {
+                    "type": "string"
+                  },
+                  "regional": {
+                    "type": "boolean"
+                  },
+                  "requires_invoice": {
+                    "type": "boolean"
+                  },
+                  "requires_waybill": {
+                    "type": "boolean"
+                  },
+                  "slug": {
+                    "type": "string"
+                  },
+                  "carrier_id": {
+                    "type": "string"
+                  },
+                  "__v": {
+                    "type": "integer"
+                  },
+                  "created_at": {
+                    "type": "string"
+                  },
+                  "updated_at": {
+                    "type": "string"
+                  },
+                  "metadata": {
+                    "type": "string"
+                  },
+                  "supports_multi_parcels": {
+                    "type": "boolean"
+                  },
+                  "personal_account_requirements": {
+                    "type": "object",
+                    "properties": {
+                      "all": {
+                        "type": "array",
+                        "items": [
+                          {
+                            "type": "object",
+                            "properties": {
+                              "key": {
+                                "type": "string"
+                              },
+                              "name": {
+                                "type": "string"
+                              },
+                              "type": {
+                                "type": "string"
+                              },
+                              "required": {
+                                "type": "boolean"
+                              }
+                            },
+                            "required": [
+                              "key",
+                              "name",
+                              "type",
+                              "required"
+                            ]
+                          },
+                          {
+                            "type": "object",
+                            "properties": {
+                              "key": {
+                                "type": "string"
+                              },
+                              "name": {
+                                "type": "string"
+                              },
+                              "type": {
+                                "type": "string"
+                              },
+                              "required": {
+                                "type": "boolean"
+                              }
+                            },
+                            "required": [
+                              "key",
+                              "name",
+                              "type",
+                              "required"
+                            ]
+                          },
+                          {
+                            "type": "object",
+                            "properties": {
+                              "key": {
+                                "type": "string"
+                              },
+                              "name": {
+                                "type": "string"
+                              },
+                              "type": {
+                                "type": "string"
+                              },
+                              "required": {
+                                "type": "boolean"
+                              }
+                            },
+                            "required": [
+                              "key",
+                              "name",
+                              "type",
+                              "required"
+                            ]
+                          },
+                          {
+                            "type": "object",
+                            "properties": {
+                              "key": {
+                                "type": "string"
+                              },
+                              "name": {
+                                "type": "string"
+                              },
+                              "type": {
+                                "type": "string"
+                              },
+                              "required": {
+                                "type": "boolean"
+                              }
+                            },
+                            "required": [
+                              "key",
+                              "name",
+                              "type",
+                              "required"
+                            ]
+                          }
+                        ]
+                      }
+                    },
+                    "required": [
+                      "all"
+                    ]
+                  },
+                  "dropoff_available": {
+                    "type": "boolean"
+                  },
+                  "supports_cash_on_delivery": {
+                    "type": "boolean"
+                  },
+                  "supports_personal_accounts": {
+                    "type": "boolean"
+                  }
+                },
+                "required": [
+                  "active",
+                  "available_countries",
+                  "contact",
+                  "domestic",
+                  "international",
+                  "logo",
+                  "name",
+                  "regional",
+                  "requires_invoice",
+                  "requires_waybill",
+                  "slug",
+                  "carrier_id",
+                  "__v",
+                  "created_at",
+                  "updated_at",
+                  "metadata",
+                  "supports_multi_parcels",
+                  "personal_account_requirements",
+                  "dropoff_available",
+                  "supports_cash_on_delivery",
+                  "supports_personal_accounts"
+                ]
+              }
+            ]
+          },
+          "pagination": {
+            "type": "object",
+            "properties": {
+              "page": {
+                "type": "integer"
+              },
+              "perPage": {
+                "type": "integer"
+              },
+              "prevPage": {
+                "type": "null"
+              },
+              "nextPage": {
+                "type": "null"
+              },
+              "currentPage": {
+                "type": "integer"
+              },
+              "total": {
+                "type": "integer"
+              },
+              "pageCount": {
+                "type": "integer"
+              },
+              "pagingCounter": {
+                "type": "integer"
+              },
+              "hasPrevPage": {
+                "type": "boolean"
+              },
+              "hasNextPage": {
+                "type": "boolean"
+              }
+            },
+            "required": [
+              "page",
+              "perPage",
+              "prevPage",
+              "nextPage",
+              "currentPage",
+              "total",
+              "pageCount",
+              "pagingCounter",
+              "hasPrevPage",
+              "hasNextPage"
+            ]
+          }
+        },
+        "required": [
+          "carriers",
+          "pagination"
+        ]
+      }
+    },
+    "required": [
+      "status",
+      "message",
+      "data"
+    ]
+  }
