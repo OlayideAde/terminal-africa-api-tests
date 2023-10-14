@@ -30,4 +30,4 @@ jobs:
       if: always()
       with:
         name: testReport
-        path: test-reports 
+        path: test-report
