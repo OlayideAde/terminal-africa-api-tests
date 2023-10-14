@@ -1,10 +1,12 @@
 import { expect } from "chai";
 import { RequestHelper } from "../../helpers/requestHelper.js";
+import { Constants } from "../../constants/constants.js";
 
 let baseUrl;
 let response;
 let payload;
 
+const constants = new Constants();
 const endPoint = "/packaging";
 const auth = {
   Authorization: "Bearer sk_test_XclolM6ke5rdVfdSmTEjzOTT8YLUNfbx",
@@ -33,12 +35,12 @@ export default class CreatePackaging {
     const default_vals = {
       height: 30,
       length: 30,
-      name: "default package",
-      size_unit: "cm",
-      type: "box",
+      name: this.requestHelper.generateRandomString(8),
+      size_unit: constants.size_unit.CM,
+      type: constants.packaging_type.BOX,
       width: 10,
       weight: 1,
-      weight_unit: "kg",
+      weight_unit: constants.weight_unit.KG,
     };
 
     payload = { ...default_vals, ...options };
@@ -79,5 +81,7 @@ export default class CreatePackaging {
     expect(data.updated_at).to.not.be.empty;
     expect(data.__v).to.not.be.null;
     expect(data._id).to.equal(data._id);
-  }
+  };
+
+  
 }
