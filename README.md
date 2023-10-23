@@ -1,6 +1,6 @@
 # terminal-africa-tests
 
-This repo contains testcases for a few of Terminal Africa's [public APIs](https://docs.terminal.africa/tship/packaging/create-packaging)
+This repo contains testcases for a few of Terminal Africa's [public APIs](https://docs.terminal.africa/tship/packaging/create-packaging) using MOcha
 
 ## Cloning the repo
 
